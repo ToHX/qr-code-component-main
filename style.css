@@ -17,14 +17,20 @@
 /* Set core body defaults */
 body {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  flex-direction: column;
+  /* justify-content: center;
+  align-items: center; */
   min-height: 100vh;
   text-rendering: optimizeSpeed;
   line-height: 1.5;
   font-family: 'Outfit', sans-serif;
   font-size: 0.9375rem;
   background: var(--light-gray);
+}
+
+main {
+  justify-content: center;
+  align-items: center;
 }
 
 /* main {
@@ -83,18 +89,10 @@ img {
 }
 
 footer {
-  visibility: hidden;
-  display: none;
-}
-
-@media (min-width: 720px) {
-  footer {
-    margin-top: auto;
-    visibility: visible;
-    display: block;
-    flex-grow: 3.5vh;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-  }
+  margin-top: auto;
+  visibility: visible;
+  display: block;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
