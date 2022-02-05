@@ -18,8 +18,8 @@
 body {
   display: flex;
   flex-direction: column;
-  /* justify-content: center;
-  align-items: center; */
+  justify-content: center;
+  align-items: center;
   min-height: 100vh;
   text-rendering: optimizeSpeed;
   line-height: 1.5;
@@ -33,10 +33,6 @@ main {
   align-items: center;
 }
 
-/* main {
-  flex-grow: 1;
-} */
-
 p {
   font-weight: lighter;
   font-size: large;
@@ -47,7 +43,6 @@ p {
   font-weight: bolder;
   padding-top: 20px;
   padding-bottom: 20px;
-  /* padding: 10px; */
 }
 
 img {
@@ -90,9 +85,5 @@ img {
 
 footer {
   margin-top: auto;
-  visibility: visible;
   display: block;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
 }
