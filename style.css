@@ -1,0 +1,100 @@
+:root {
+  --white: hsl(0, 0%, 100%);
+  --light-gray: hsl(212, 45%, 89%);
+  --grayish-blue: hsl(220, 15%, 55%);
+  --dark-blue: hsl(218, 44%, 22%);
+}
+
+/* CSS Reset */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Set core body defaults */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+  font-family: 'Outfit', sans-serif;
+  font-size: 0.9375rem;
+  background: var(--light-gray);
+}
+
+/* main {
+  flex-grow: 1;
+} */
+
+p {
+  font-weight: lighter;
+  font-size: large;
+  text-align: center;
+}
+
+.main-sentence {
+  font-weight: bolder;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  /* padding: 10px; */
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 20px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 28rem;
+  padding: 1.2rem;
+  border-radius: 20px;
+  background-color: var(--white);
+  box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+}
+
+.main-sentence {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.secondary-sentence {
+  text-align: center;
+  color: var(--grayish-blue);
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+footer {
+  visibility: hidden;
+  display: none;
+}
+
+@media (min-width: 720px) {
+  footer {
+    margin-top: auto;
+    visibility: visible;
+    display: block;
+    flex-grow: 3.5vh;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+}
