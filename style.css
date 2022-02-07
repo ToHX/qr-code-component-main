@@ -16,10 +16,6 @@
 
 /* Set core body defaults */
 body {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   min-height: 100vh;
   text-rendering: optimizeSpeed;
   line-height: 1.5;
@@ -29,6 +25,8 @@ body {
 }
 
 main {
+  display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
